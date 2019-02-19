@@ -55,7 +55,9 @@
         </div>
         
         <div class="panel-body">
-          <!-- xxx -->
+          <% @have_users.each do |user| %>
+          <%= link_to user.name, user_path(user) %>
+          <% end %>
         </div>
         
       </div>
